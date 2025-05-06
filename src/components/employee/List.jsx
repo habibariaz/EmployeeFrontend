@@ -15,7 +15,7 @@ const List = () => {
         const fetchEmployees = async () => {
             setEmpLoading(true)
             try {
-                const response = await axios.get("http://localhost:3000/api/employees", {
+                const response = await axios.get("https://employee-backend-pearl-omega.vercel.app/api/employees", {
                     headers: {
                         "Authorization": `Bearer ${localStorage.getItem("token")}`,
                     }
